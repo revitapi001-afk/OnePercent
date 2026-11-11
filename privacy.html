@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – OnePercent</title>
+  <meta name="description" content="What information the OnePercent add-in for Autodesk Revit collects, why, where it is kept and how to have it removed.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e6fbf'/%3E%3Ctext x='16' y='22' font-family='Segoe UI,Arial' font-size='15' font-weight='700' text-anchor='middle' fill='%23fff'%3E1%25%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">One<span>Percent</span></a>
+    <nav class="nav">
+      <a href="index.html">Home / Trang chủ</a>
+      <a href="#english">English</a>
+      <a href="#tieng-viet">Tiếng Việt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+
+    <div class="switch">
+      <a href="#english">English</a>
+      <a href="#tieng-viet">Tiếng Việt</a>
+    </div>
+
+    <!-- ============================== ENGLISH ============================== -->
+    <article id="english" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective date: 11 November 2026</p>
+
+      <p>This policy explains what information <strong>OnePercent</strong> collects, why, where it is kept and how you can have it removed. OnePercent is an add-in for Autodesk Revit, together with the licence service it connects to and this website.</p>
+      <p>Contact for anything in this policy: <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a>.</p>
+
+      <h2>1. Information we collect</h2>
+
+      <h3>From your Google account, when you sign in</h3>
+      <p>OnePercent uses Google Sign-In with the basic scopes <code>openid</code>, <code>email</code> and <code>profile</code> only. From what Google returns we keep:</p>
+      <ul>
+        <li>your <strong>email address</strong>;</li>
+        <li>your <strong>display name</strong>.</li>
+      </ul>
+      <p>You sign in on Google's own page in your web browser. OnePercent never receives your password, does not store your profile picture, and has no access to Gmail, Google Drive, Calendar, contacts or any other Google data.</p>
+
+      <h3>From your computer</h3>
+      <ul>
+        <li>a <strong>device identifier</strong>: a one-way hash derived from your Windows installation, which cannot be turned back into the original value;</li>
+        <li>the <strong>computer name</strong>;</li>
+        <li>the <strong>Revit version</strong> and the <strong>OnePercent version</strong>.</li>
+      </ul>
+
+      <h3>Licence records</h3>
+      <ul>
+        <li>your plan and its expiry date;</li>
+        <li>when your account was created and when the add-in last contacted the licence service;</li>
+        <li>activation codes you have used.</li>
+      </ul>
+
+      <h3>Orders and payments</h3>
+      <ul>
+        <li>the order code, plan, amount, status and dates;</li>
+        <li>for a bank transfer: the bank's transaction reference, the amount, the time and the transfer note. The note is passed on as the bank reports it and may include the sender's name or account details that the bank adds.</li>
+      </ul>
+      <p>Payments are made by bank transfer straight to the seller's bank account. OnePercent never asks for or stores card numbers, bank passwords or one-time codes.</p>
+
+      <h3>What we do not collect</h3>
+      <ul>
+        <li><strong>Your Revit models, drawings, file names or any project content.</strong> The commands work on your computer. The add-in connects to the network only for the things described in this policy: Google sign-in, the licence service, and fetching the payment QR picture.</li>
+        <li>No advertising identifiers, no analytics and no tracking.</li>
+        <li>This website sets no cookies and loads nothing from third parties. The company hosting it may keep ordinary server logs (such as IP address and time of visit).</li>
+      </ul>
+
+      <h2>2. How we use it</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Information</th><th>Used for</th></tr>
+          <tr><td>Email address, display name</td><td>Identifying the licence holder, showing the signed-in account in the add-in, replying to support requests</td></tr>
+          <tr><td>Device identifier, computer name</td><td>Tying a licence to your computers and keeping to the number of computers a plan allows; preventing repeated free trials on one computer</td></tr>
+          <tr><td>Revit and add-in version</td><td>Support and telling you when an update is available</td></tr>
+          <tr><td>Licence records</td><td>Deciding whether the commands may run</td></tr>
+          <tr><td>Orders and payment details</td><td>Matching a payment to an order, activating the plan, bookkeeping</td></tr>
+        </table>
+      </div>
+      <p>We do not sell your information, do not use it for advertising, and do not use it to build profiles or to train machine-learning models.</p>
+
+      <h2>3. Where it is kept and how it is protected</h2>
+      <ul>
+        <li>The licence service runs on Google Apps Script and keeps its records in a Google Sheets spreadsheet in OnePercent's Google account. Only the operator of OnePercent has access to it. The data is stored on Google's servers, which may be outside your country.</li>
+        <li>The add-in talks to the licence service over HTTPS.</li>
+        <li>On your computer the add-in keeps a licence file in your Windows user profile, encrypted with Windows Data Protection so that it works only for your Windows account.</li>
+        <li>The sign-in session is stored on the server only as a hash.</li>
+      </ul>
+
+      <h2>4. Who we share it with</h2>
+      <ul>
+        <li><strong>Google</strong>, which provides sign-in and hosts the licence service.</li>
+        <li><strong>The payment-notification service</strong> connected to the seller's bank account, which reports incoming transfers so an order can be confirmed. It handles bank transaction details, not your Google account information.</li>
+        <li><strong>The QR-code picture service (VietQR).</strong> When you open an order, the add-in downloads the transfer QR picture from it. That request carries the seller's account number, the amount and the order code, not your name or email; like any web request it does reveal your IP address to that service.</li>
+        <li>Authorities, when the law requires it.</li>
+      </ul>
+      <p>Nobody else.</p>
+
+      <h2>5. How long we keep it</h2>
+      <p>Account and licence records are kept for as long as you have an account. Order and payment records are kept for as long as accounting and tax rules require. When you ask us to delete your account we remove your account, device and licence records, and keep only the order records the law obliges us to keep.</p>
+
+      <h2>6. Your choices</h2>
+      <ul>
+        <li><strong>See, correct or delete your data:</strong> write to <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a> from the email address of your account.</li>
+        <li><strong>Sign out:</strong> “Sign out” in the add-in's Account window removes the sign-in and licence from that computer.</li>
+        <li><strong>Withdraw Google access:</strong> remove OnePercent at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      </ul>
+      <p>Without a Google sign-in the licensed commands cannot be used.</p>
+
+      <h2>7. Google user data</h2>
+      <p>OnePercent's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Information received from Google is used only to provide the sign-in and licensing described in this policy.</p>
+
+      <h2>8. Children</h2>
+      <p>OnePercent is professional software and is not intended for anyone under 16.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>If this policy changes, the new version is published on this page with a new effective date.</p>
+
+      <h2>10. Contact</h2>
+      <p>OnePercent · <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a></p>
+    </article>
+
+    <hr class="divider">
+
+    <!-- ============================== TIẾNG VIỆT ============================== -->
+    <article id="tieng-viet" lang="vi">
+      <h1>Chính sách quyền riêng tư</h1>
+      <p class="date">Ngày có hiệu lực: 11/11/2026</p>
+
+      <p>Chính sách này cho biết <strong>OnePercent</strong> thu thập thông tin gì, để làm gì, lưu ở đâu và bạn yêu cầu xoá bằng cách nào. OnePercent gồm add-in cho Autodesk Revit, dịch vụ cấp giấy phép mà add-in kết nối tới, và trang web này.</p>
+      <p>Mọi câu hỏi về chính sách này: <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a>.</p>
+
+      <h2>1. Thông tin chúng tôi thu thập</h2>
+
+      <h3>Từ tài khoản Google, khi bạn đăng nhập</h3>
+      <p>OnePercent dùng Google Sign-In và chỉ xin ba quyền cơ bản <code>openid</code>, <code>email</code>, <code>profile</code>. Trong những gì Google trả về, chúng tôi lưu:</p>
+      <ul>
+        <li><strong>địa chỉ email</strong> của bạn;</li>
+        <li><strong>tên hiển thị</strong> của bạn.</li>
+      </ul>
+      <p>Bạn đăng nhập trên trang của chính Google trong trình duyệt. OnePercent không bao giờ nhận mật khẩu, không lưu ảnh đại diện, và không có quyền vào Gmail, Google Drive, Lịch, danh bạ hay bất kỳ dữ liệu Google nào khác.</p>
+
+      <h3>Từ máy tính của bạn</h3>
+      <ul>
+        <li><strong>mã định danh máy</strong>: một giá trị băm một chiều tạo từ bản cài Windows, không thể suy ngược lại giá trị gốc;</li>
+        <li><strong>tên máy tính</strong>;</li>
+        <li><strong>phiên bản Revit</strong> và <strong>phiên bản OnePercent</strong>.</li>
+      </ul>
+
+      <h3>Hồ sơ giấy phép</h3>
+      <ul>
+        <li>gói đang dùng và ngày hết hạn;</li>
+        <li>thời điểm tạo tài khoản và lần gần nhất add-in kết nối tới dịch vụ cấp giấy phép;</li>
+        <li>các mã kích hoạt bạn đã dùng.</li>
+      </ul>
+
+      <h3>Đơn hàng và thanh toán</h3>
+      <ul>
+        <li>mã đơn, gói, số tiền, trạng thái và ngày giờ;</li>
+        <li>với chuyển khoản ngân hàng: mã giao dịch của ngân hàng, số tiền, thời điểm và nội dung chuyển khoản. Nội dung được ghi lại đúng như ngân hàng báo về, có thể kèm tên hoặc thông tin tài khoản người gửi do ngân hàng thêm vào.</li>
+      </ul>
+      <p>Việc thanh toán là chuyển khoản thẳng vào tài khoản ngân hàng của người bán. OnePercent không bao giờ hỏi hay lưu số thẻ, mật khẩu ngân hàng hoặc mã OTP.</p>
+
+      <h3>Những gì chúng tôi không thu thập</h3>
+      <ul>
+        <li><strong>Mô hình Revit, bản vẽ, tên file hay bất kỳ nội dung dự án nào của bạn.</strong> Các lệnh chạy trên máy của bạn. Add-in chỉ kết nối mạng cho những việc nêu trong chính sách này: đăng nhập Google, dịch vụ cấp giấy phép, và tải ảnh mã QR thanh toán.</li>
+        <li>Không có mã định danh quảng cáo, không phân tích hành vi, không theo dõi.</li>
+        <li>Trang web này không đặt cookie và không tải gì từ bên thứ ba. Đơn vị cho thuê chỗ đặt trang web có thể giữ nhật ký máy chủ thông thường (như địa chỉ IP và thời điểm truy cập).</li>
+      </ul>
+
+      <h2>2. Chúng tôi dùng thông tin để làm gì</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Thông tin</th><th>Dùng để</th></tr>
+          <tr><td>Email, tên hiển thị</td><td>Xác định người giữ giấy phép, hiện tài khoản đang đăng nhập trong add-in, trả lời yêu cầu hỗ trợ</td></tr>
+          <tr><td>Mã định danh máy, tên máy tính</td><td>Gắn giấy phép với máy của bạn và giữ đúng số máy mà gói cho phép; ngăn dùng thử lặp lại trên cùng một máy</td></tr>
+          <tr><td>Phiên bản Revit và add-in</td><td>Hỗ trợ và báo khi có bản cập nhật</td></tr>
+          <tr><td>Hồ sơ giấy phép</td><td>Quyết định các lệnh có được chạy hay không</td></tr>
+          <tr><td>Đơn hàng và thanh toán</td><td>Khớp khoản tiền với đơn, kích hoạt gói, ghi sổ kế toán</td></tr>
+        </table>
+      </div>
+      <p>Chúng tôi không bán thông tin của bạn, không dùng để quảng cáo, không dùng để lập hồ sơ người dùng hay huấn luyện mô hình máy học.</p>
+
+      <h2>3. Lưu ở đâu và bảo vệ thế nào</h2>
+      <ul>
+        <li>Dịch vụ cấp giấy phép chạy trên Google Apps Script và lưu hồ sơ trong một bảng tính Google Sheets thuộc tài khoản Google của OnePercent. Chỉ người vận hành OnePercent truy cập được. Dữ liệu nằm trên máy chủ của Google, có thể ở ngoài quốc gia của bạn.</li>
+        <li>Add-in kết nối tới dịch vụ cấp giấy phép qua HTTPS.</li>
+        <li>Trên máy của bạn, add-in giữ một file giấy phép trong hồ sơ người dùng Windows, được mã hoá bằng Windows Data Protection nên chỉ dùng được với tài khoản Windows của bạn.</li>
+        <li>Phiên đăng nhập chỉ được lưu trên máy chủ dưới dạng giá trị băm.</li>
+      </ul>
+
+      <h2>4. Chúng tôi chia sẻ với ai</h2>
+      <ul>
+        <li><strong>Google</strong>, đơn vị cung cấp đăng nhập và nơi chạy dịch vụ cấp giấy phép.</li>
+        <li><strong>Dịch vụ báo biến động số dư</strong> nối với tài khoản ngân hàng của người bán, để báo tiền về và xác nhận đơn. Dịch vụ này xử lý thông tin giao dịch ngân hàng, không xử lý thông tin tài khoản Google của bạn.</li>
+        <li><strong>Dịch vụ tạo ảnh mã QR (VietQR).</strong> Khi bạn mở một đơn, add-in tải ảnh mã QR chuyển khoản từ dịch vụ này. Yêu cầu đó mang số tài khoản người bán, số tiền và mã đơn, không mang tên hay email của bạn; như mọi yêu cầu web, dịch vụ đó thấy được địa chỉ IP của bạn.</li>
+        <li>Cơ quan có thẩm quyền, khi pháp luật yêu cầu.</li>
+      </ul>
+      <p>Ngoài ra không chia sẻ với ai khác.</p>
+
+      <h2>5. Lưu trong bao lâu</h2>
+      <p>Hồ sơ tài khoản và giấy phép được giữ chừng nào bạn còn tài khoản. Hồ sơ đơn hàng và thanh toán được giữ theo thời hạn mà quy định về kế toán và thuế yêu cầu. Khi bạn yêu cầu xoá tài khoản, chúng tôi xoá hồ sơ tài khoản, máy và giấy phép của bạn, chỉ giữ lại hồ sơ đơn hàng mà pháp luật buộc phải giữ.</p>
+
+      <h2>6. Lựa chọn của bạn</h2>
+      <ul>
+        <li><strong>Xem, sửa hoặc xoá dữ liệu:</strong> gửi thư tới <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a> từ chính địa chỉ email của tài khoản.</li>
+        <li><strong>Đăng xuất:</strong> nút “Đăng xuất” trong cửa sổ Account của add-in xoá phiên đăng nhập và giấy phép khỏi máy đó.</li>
+        <li><strong>Thu hồi quyền truy cập Google:</strong> gỡ OnePercent tại <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      </ul>
+      <p>Không đăng nhập Google thì không dùng được các lệnh cần giấy phép.</p>
+
+      <h2>7. Dữ liệu người dùng Google</h2>
+      <p>Việc OnePercent sử dụng và chuyển giao thông tin nhận từ Google API tuân theo <a href="https://developers.google.com/terms/api-services-user-data-policy">Chính sách dữ liệu người dùng của Dịch vụ API Google</a>, bao gồm các yêu cầu về Sử dụng hạn chế (Limited Use). Thông tin nhận từ Google chỉ được dùng để đăng nhập và cấp giấy phép như mô tả trong chính sách này.</p>
+
+      <h2>8. Trẻ em</h2>
+      <p>OnePercent là phần mềm nghề nghiệp, không dành cho người dưới 16 tuổi.</p>
+
+      <h2>9. Thay đổi chính sách</h2>
+      <p>Khi chính sách thay đổi, bản mới được đăng tại trang này kèm ngày có hiệu lực mới.</p>
+
+      <h2>10. Liên hệ</h2>
+      <p>OnePercent · <a href="mailto:revitapi001@gmail.com">revitapi001@gmail.com</a></p>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 OnePercent · <a href="index.html">Home / Trang chủ</a></p>
+    <p>Autodesk and Revit are registered trademarks of Autodesk, Inc. OnePercent is an independent add-in and is not affiliated with or endorsed by Autodesk.</p>
+  </div>
+</footer>
+
+</body>
+</html>
