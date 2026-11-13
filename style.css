@@ -104,6 +104,26 @@ a:hover { color: var(--blue-ink); }
 .btn.primary:hover { background: #ffd57e; color: #3a2a00; }
 .btn.ghost { border-color: rgba(255, 255, 255, 0.55); color: #fff; background: rgba(255, 255, 255, 0.1); }
 .btn.ghost:hover { background: rgba(255, 255, 255, 0.2); color: #fff; }
+.btn.solid { background: var(--blue); color: #fff; }
+.btn.solid:hover { background: var(--blue-ink); color: #fff; }
+.hero .meta { margin: 16px 0 0; font-size: 14px; color: #c9dcf0; }
+
+/* ---- download ---- */
+.download-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  margin: 0 0 20px;
+  background: var(--wash);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.download-file strong { display: block; color: var(--blue-ink); word-break: break-all; }
+.download-file span { font-size: 14px; color: var(--muted); }
+.panel .note { margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 
 /* ---- sections ---- */
 section { padding: 44px 0 8px; }
