@@ -271,7 +271,7 @@
 </footer>
 
 <script>
-  // "Xem các gói": the plans start folded; without JavaScript they simply stay visible.
+  // "Xem các gói" / "Ẩn các gói": the plans start open (user's choice); the button folds them away.
   (function () {
     var body = document.getElementById('plans-body');
     var button = document.querySelector('.show-plans');
@@ -282,7 +282,7 @@
       button.setAttribute('aria-expanded', open ? 'true' : 'false');
     }
 
-    setOpen(location.hash === '#bang-gia');
+    setOpen(true);
     button.addEventListener('click', function () { setOpen(body.hidden); });
 
     var links = document.querySelectorAll('[data-open-plans]');
