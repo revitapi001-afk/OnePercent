@@ -316,10 +316,133 @@ footer p:last-child { margin-bottom: 0; }
 .social.tt svg { fill: #000; }
 .social.gh svg { fill: #181717; }
 
+/* ---- plans ---- */
+.hero .meta a { color: #fff; }
+button.btn { font: inherit; font-weight: 600; cursor: pointer; }
+.show-plans { display: inline-flex; align-items: center; gap: 8px; }
+.show-plans svg { transition: transform 0.2s; }
+.show-plans[aria-expanded="true"] svg { transform: rotate(180deg); }
+.show-plans .when-open { display: none; }
+.show-plans[aria-expanded="true"] .when-open { display: inline; }
+.show-plans[aria-expanded="true"] .when-closed { display: none; }
+.plans-body { margin-top: 20px; animation: plans-in 0.25s ease-out; }
+.plans-body[hidden] { display: none; }
+@keyframes plans-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+.plan {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--blue);
+  border-radius: 10px;
+  padding: 18px 18px 16px;
+}
+.plan.best { border-color: var(--blue); border-top-color: var(--blue); box-shadow: 0 4px 18px rgba(18, 62, 107, 0.14); }
+.plan h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); font-weight: 600; }
+.plan .price { margin: 0; font-size: 30px; font-weight: 700; line-height: 1.1; color: var(--blue-ink); }
+.plan .price small { font-size: 18px; font-weight: 600; }
+.plan .per { margin: 4px 0 14px; font-size: 14px; color: var(--muted); }
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.tag.save { background: #e6f4e7; color: var(--green); }
+.tag.gold { background: #fff3d6; color: #7a5600; }
+.tag.muted { background: var(--wash); color: var(--blue-ink); }
+
+.plan-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding: 16px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.ticks { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.ticks li { position: relative; padding-left: 24px; font-size: 15px; }
+.ticks li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 6px;
+  height: 11px;
+  border: solid var(--green);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+.plan-info .how { margin: 0; font-size: 14px; color: var(--muted); max-width: 520px; }
+
+.ai-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 26px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 26px 28px;
+  border-radius: 12px;
+  background: linear-gradient(150deg, var(--blue-dark) 0%, #1a5694 100%);
+  color: #e4effa;
+}
+.ai-box .kicker { margin: 0 0 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; color: var(--gold); }
+.ai-box h3 { margin: 0 0 10px; font-size: 22px; color: #fff; }
+.ai-box p { margin: 0 0 16px; }
+.ai-flow { list-style: none; margin: 0; padding: 0; display: flex; align-items: stretch; gap: 22px; }
+.ai-flow li {
+  position: relative;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 8px;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}
+.ai-flow li + li::before {
+  content: "→";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-size: 16px;
+  font-weight: 700;
+}
+.ai-flow .stroke { fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ai-flow .pair { display: flex; gap: 8px; }
+.ai-flow .claude { fill: #d97757; }
+.ai-flow .gpt { fill: #fff; }
+
+@media (max-width: 760px) {
+  .ai-box { grid-template-columns: 1fr; padding: 22px 18px; }
+}
+
 @media (max-width: 560px) {
   .hero { padding: 40px 0 46px; }
   .hero p { font-size: 16px; }
   .panel { padding: 18px 16px; }
+  .ai-flow { gap: 18px; }
+  .ai-flow li { font-size: 12.5px; padding: 12px 4px; }
+  .ai-flow li + li::before { left: -15px; }
   .author { flex-direction: column; gap: 14px; }
   .avatar { width: 64px; height: 64px; font-size: 22px; }
   .author h3 span { display: block; margin: 2px 0 0; }
